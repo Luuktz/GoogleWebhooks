@@ -5,7 +5,7 @@ function triggerGoogleChatNotification($text)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'WEBHOOK_LINK', // replace WEBHOOK_LINK with your webhook url
+        CURLOPT_URL => 'https://chat.googleapis.com/v1/spaces/AAAARoy5d1g/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=akQwIhkyeHmDQH4h5ARCl3NKVtvfm7WaeMj1j7IU8WI', // replace WEBHOOK_LINK with your webhook url
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -24,6 +24,6 @@ function triggerGoogleChatNotification($text)
 }
 
 
-triggerGoogleChatNotification("Hi");
+triggerGoogleChatNotification("Joesoe");
 
 ?>
